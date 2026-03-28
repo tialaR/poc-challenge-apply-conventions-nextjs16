@@ -1,0 +1,93 @@
+/**
+ * ==============================================
+ * LEGAL PAGE STYLES
+ * Estilos compartilhados para páginas legais
+ * ==============================================
+ */
+
+.main {
+  min-height: 100vh;
+  padding: 2rem 1rem;
+}
+
+@media (min-width: 768px) {
+  .main {
+    padding: 3rem 1.5rem;
+  }
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Back link */
+.backLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  color: var(--muted-foreground);
+  text-decoration: none;
+  margin-bottom: 2rem;
+  transition: color 0.2s ease;
+}
+
+.backLink:hover {
+  color: var(--foreground);
+}
+
+/* Header */
+.header {
+  margin-bottom: 2.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--foreground);
+  margin-bottom: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .title {
+    font-size: 2.5rem;
+  }
+}
+
+.date {
+  font-size: 0.875rem;
+  color: var(--muted-foreground);
+}
+
+/* Content */
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.section h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--foreground);
+  margin-bottom: 0.75rem;
+}
+
+.section p {
+  font-size: 1rem;
+  color: var(--muted-foreground);
+  line-height: 1.7;
+}
+
+.link {
+  color: var(--primary);
+  text-decoration: none;
+  margin-left: 0.25rem;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
