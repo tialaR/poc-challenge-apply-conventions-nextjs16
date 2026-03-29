@@ -185,3 +185,28 @@ export function getStatusInfo(status: string): { label: string; color: string } 
   }
   return statusMap[status] || { label: status, color: 'muted' }
 }
+
+
+// Backward-compatible aliases/helpers
+export const formatDateRelative = formatRelativeTime
+export const slugify = generateSlug
+export const capitalizeWords = capitalize
+
+export function formatCPF(cpf: string): string {
+  const cleaned = cpf.replace(/\D/g, '')
+  if (cleaned.length !== 11) return ''
+  return `${cleaned.slice(0, 3)}.${cleaned.slice(3, 6)}.${cleaned.slice(6, 9)}-${cleaned.slice(9)}`
+}
+
+export function formatCNPJ(cnpj: string): string {
+  const cleaned = cnpj.replace(/\D/g, '')
+  if (cleaned.length !== 14) return ''
+  return `${cleaned.slice(0, 2)}.${cleaned.slice(2, 5)}.${cleaned.slice(5, 8)}/${cleaned.slice(8, 12)}-${cleaned.slice(12)}`
+}
+
+export function getInitials(name: string): string {
+  const parts = name.trim().split(/\s+/).filter(Boolean)
+  if (parts.length === 0) return ''
+  if (parts.length === 1) return parts[0].charAt(0).toUpperCase()
+  return `${parts[0].charAt(0)}${parts[parts.length - 1].charAt(0)}`.toUpperCase()
+}

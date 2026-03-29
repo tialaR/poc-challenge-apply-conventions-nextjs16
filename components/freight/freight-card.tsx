@@ -21,7 +21,7 @@ import {
   formatWeight,
   formatRelativeTime,
   formatLocation
-} from '@/lib/formatters'
+} from '@/shared/utils/formatter'
 import { 
   vehicleTypeLabels, 
   bodyTypeLabels, 

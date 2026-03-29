@@ -35,8 +35,8 @@ const contactInfo = [
   {
     icon: Mail,
     title: 'Email',
-    value: 'contato@freteapp.com.br',
-    link: 'mailto:contato@freteapp.com.br',
+    value: 'contato@fleteapp.com',
+    link: 'mailto:contato@fleteapp.com',
   },
   {
     icon: Phone,

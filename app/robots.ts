@@ -16,7 +16,7 @@ import type { MetadataRoute } from 'next'
  * Define regras de crawling para bots
  */
 export default function robots(): MetadataRoute.Robots {
-  const baseUrl = 'https://freteapp.com.br'
+  const baseUrl = 'https://fleteapp.com'
 
   return {
     rules: [
