@@ -19,9 +19,8 @@ import {
   formatCurrency, 
   formatDistance, 
   formatWeight,
-  formatRelativeTime,
-  formatLocation
-} from '@/lib/formatters'
+  formatRelativeTime
+} from '@/shared/utils/formatter'
 import { 
   vehicleTypeLabels, 
   bodyTypeLabels, 

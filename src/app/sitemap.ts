@@ -18,7 +18,7 @@ import { mockFreights } from '@/lib/mock-data'
  * Inclui páginas estáticas e dinâmicas
  */
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://freteapp.com.br'
+  const baseUrl = 'https://fleteapp.com'
 
   // Páginas estáticas
   const staticPages: MetadataRoute.Sitemap = [

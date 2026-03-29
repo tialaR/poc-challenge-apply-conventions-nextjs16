@@ -12,7 +12,7 @@
  */
 
 import { Suspense } from 'react'
-import { FreightFilters, FreightCard, FreightCardSkeleton } from '@/components/freight'
+import { FreightFilters, FreightCard, FreightCardSkeleton } from '@/features/freights/components'
 import { mockFreights } from '@/lib/mock-data'
 import type { Freight, FreightFilters as FilterType } from '@/lib/types'
 import styles from './page.module.css'

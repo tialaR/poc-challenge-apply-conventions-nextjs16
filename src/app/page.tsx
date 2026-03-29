@@ -16,7 +16,7 @@ import { ArrowRight, Truck, Shield, Zap, Users } from 'lucide-react'
 import { Header, Footer } from '@/components/layout'
 import { Button } from '@/components/ui/button'
 import { mockFreights } from '@/lib/mock-data'
-import { FreightCard } from '@/components/freight'
+import { FreightCard } from '@/features/freights/components'
 import styles from './page.module.css'
 
 /**

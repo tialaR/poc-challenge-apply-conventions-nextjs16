@@ -18,7 +18,7 @@ import { useFormStatus } from 'react-dom'
 import { Send, Loader2 } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { submitFreightInterest } from '@/lib/actions'
-import { formatCurrency } from '@/lib/formatters'
+import { formatCurrency } from '@/shared/utils/formatter'
 import styles from './interest-form.module.css'
 
 /**

@@ -10,7 +10,7 @@
  * ==============================================
  */
 
-import { FreightCardSkeleton } from '@/components/freight'
+import { FreightCardSkeleton } from '@/features/freights/components'
 import styles from './page.module.css'
 
 /**

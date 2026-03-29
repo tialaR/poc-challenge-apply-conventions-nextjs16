@@ -10,7 +10,7 @@
 
 import { screen, within } from '@testing-library/react';
 import { render, setupUser, createMockFreight } from '../utils/test-utils';
-import { FreightCard } from '@/components/freight/freight-card';
+import { FreightCard } from '@/features/freights/components/freight-card';
 import type { Freight } from '@/lib/types';
 
 // =============================================================================

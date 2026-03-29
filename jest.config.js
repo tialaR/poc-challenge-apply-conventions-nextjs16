@@ -27,7 +27,7 @@ const customJestConfig = {
   // Mapeamento de módulos para resolver aliases do TypeScript
   moduleNameMapper: {
     // Suporte ao alias @ para imports
-    '^@/(.*)$': '<rootDir>/$1',
+    '^@/(.*)$': '<rootDir>/src/$1',
     
     // Mock para CSS Modules - retorna um objeto vazio para evitar erros
     '^.+\\.module\\.(css|sass|scss)$': 'identity-obj-proxy',
@@ -55,9 +55,10 @@ const customJestConfig = {
   
   // Cobertura de código
   collectCoverageFrom: [
-    'lib/**/*.{ts,tsx}',
-    'components/**/*.{ts,tsx}',
-    'app/**/*.{ts,tsx}',
+    'src/lib/**/*.{ts,tsx}',
+    'src/components/**/*.{ts,tsx}',
+    'src/features/**/*.{ts,tsx}',
+    'src/app/**/*.{ts,tsx}',
     '!**/*.d.ts',
     '!**/node_modules/**',
     '!**/.next/**',
