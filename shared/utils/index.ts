@@ -5,5 +5,5 @@
  * ==============================================
  */
 
-export * from './formatters'
+export * from './formatter'
 export * from './constants'

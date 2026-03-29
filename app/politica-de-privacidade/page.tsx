@@ -104,8 +104,8 @@ export default function PrivacyPage() {
               <h2>7. Contato</h2>
               <p>
                 Para dúvidas sobre esta política, entre em contato através do email: 
-                <a href="mailto:privacidade@freteapp.com.br" className={styles.link}>
-                  privacidade@freteapp.com.br
+                <a href="mailto:privacidade@fleteapp.com" className={styles.link}>
+                  privacidade@fleteapp.com
                 </a>
               </p>
             </section>
