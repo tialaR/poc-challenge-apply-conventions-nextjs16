@@ -34,7 +34,7 @@ export default function GlobalError({ error, reset }: GlobalErrorProps) {
   }, [error])
 
   return (
-    <html lang="pt-BR">
+    <html lang="es-MX">
       <body
         style={{
           margin: 0,

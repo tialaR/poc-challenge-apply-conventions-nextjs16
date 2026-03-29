@@ -293,8 +293,8 @@ export function getFreightById(id: string): Freight | undefined {
 /**
  * Busca um frete pelo slug e ID
  */
-export function getFreightBySlugAndId(slug: string, id: string): Freight | undefined {
-  return mockFreights.find(f => f.slug === slug && f.id === id)
+export async function getFreightBySlugAndId(slug: string, id: string): Promise<Freight | undefined> {
+  return Promise.resolve(mockFreights.find(f => f.slug === slug && f.id === id))
 }
 
 /**

@@ -35,10 +35,8 @@ import {
   formatDistance, 
   formatWeight,
   formatDate,
-  formatLocation,
-  formatPhone,
-  formatRating
-} from '@/lib/formatters'
+  formatPhone
+} from '@/shared/utils/formatter'
 import { 
   vehicleTypeLabels, 
   bodyTypeLabels, 
@@ -68,7 +66,7 @@ export async function generateMetadata({
   params: Params 
 }): Promise<Metadata> {
   const { slug, id } = await params
-  const freight = getFreightBySlugAndId(slug, id)
+  const freight = await getFreightBySlugAndId(slug, id)
 
   if (!freight) {
     return {
@@ -81,7 +79,7 @@ export async function generateMetadata({
     description: `Frete de ${freight.origin.city} para ${freight.destination.city}. ${freight.description}`,
     openGraph: {
       title: `${freight.title} | FreteApp`,
-      description: `${formatLocation(freight.origin.city, freight.origin.state)} para ${formatLocation(freight.destination.city, freight.destination.state)} - ${formatCurrency(freight.price)}`,
+      description: `${freight.origin.city}, ${freight.origin.state} para ${freight.destination.city}, ${freight.destination.state} - ${formatCurrency(freight.price)}`,
     },
   }
 }
@@ -99,7 +97,7 @@ export default async function FreightDetailsPage({
   const { slug, id } = await params
   
   // Busca o frete pelo slug e ID
-  const freight = getFreightBySlugAndId(slug, id)
+  const freight = await getFreightBySlugAndId(slug, id)
 
   // Retorna 404 se não encontrado
   if (!freight) {
@@ -229,7 +227,7 @@ export default async function FreightDetailsPage({
                 <span className={styles.shipperCompany}>{freight.shipper.company}</span>
                 <div className={styles.shipperRating}>
                   <Star className="h-4 w-4 fill-current" aria-hidden="true" />
-                  <span>{formatRating(freight.shipper.rating)}</span>
+                  <span>{freight.shipper.rating.toFixed(1)}</span>
                   <span className={styles.shipperTrips}>
                     ({freight.shipper.totalFreights} fretes)
                   </span>

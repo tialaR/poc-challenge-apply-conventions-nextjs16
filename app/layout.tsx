@@ -40,42 +40,42 @@ const geistMono = Geist_Mono({
  */
 export const metadata: Metadata = {
   title: {
-    default: 'FreteApp - Marketplace de Fretes',
-    template: '%s | FreteApp',
+    default: 'FleteApp - Marketplace de Fretes',
+    template: '%s | FleteApp',
   },
   description: 'Encontre fretes disponíveis em todo o Brasil. Conectamos transportadores e embarcadores de forma rápida e segura.',
   keywords: ['frete', 'transporte', 'carga', 'caminhão', 'logística', 'transportadora'],
-  authors: [{ name: 'FreteApp' }],
-  creator: 'FreteApp',
-  publisher: 'FreteApp',
+  authors: [{ name: 'FleteApp' }],
+  creator: 'FleteApp',
+  publisher: 'FleteApp',
   formatDetection: {
     email: false,
     address: false,
     telephone: false,
   },
-  metadataBase: new URL('https://freteapp.com.br'),
+  metadataBase: new URL('https://fleteapp.com'),
   alternates: {
     canonical: '/',
   },
   openGraph: {
     type: 'website',
-    locale: 'pt_BR',
-    url: 'https://freteapp.com.br',
-    siteName: 'FreteApp',
-    title: 'FreteApp - Marketplace de Fretes',
+    locale: 'es_MX',
+    url: 'https://fleteapp.com',
+    siteName: 'FleteApp',
+    title: 'FleteApp - Marketplace de Fretes',
     description: 'Encontre fretes disponíveis em todo o Brasil',
     images: [
       {
         url: '/og-image.png',
         width: 1200,
         height: 630,
-        alt: 'FreteApp - Marketplace de Fretes',
+        alt: 'FleteApp - Marketplace de Fretes',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'FreteApp - Marketplace de Fretes',
+    title: 'FleteApp - Marketplace de Fretes',
     description: 'Encontre fretes disponíveis em todo o Brasil',
     images: ['/og-image.png'],
   },
@@ -125,7 +125,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="pt-BR" suppressHydrationWarning>
+    <html lang="es-MX" suppressHydrationWarning>
       <body 
         className={`${geistSans.variable} ${geistMono.variable} font-sans antialiased min-h-screen bg-background text-foreground`}
       >

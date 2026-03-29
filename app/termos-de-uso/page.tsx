@@ -104,8 +104,8 @@ export default function TermsPage() {
               <h2>7. Contato</h2>
               <p>
                 Para dúvidas sobre estes termos, entre em contato através do email: 
-                <a href="mailto:juridico@freteapp.com.br" className={styles.link}>
-                  juridico@freteapp.com.br
+                <a href="mailto:juridico@fleteapp.com" className={styles.link}>
+                  juridico@fleteapp.com
                 </a>
               </p>
             </section>

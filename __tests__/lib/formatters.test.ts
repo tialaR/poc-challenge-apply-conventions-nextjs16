@@ -21,7 +21,7 @@ import {
   truncate,
   capitalizeWords,
   getInitials,
-} from '@/lib/formatters';
+} from '@/shared/utils/formatter';
 
 // =============================================================================
 // TESTES DE FORMATAÇÃO DE MOEDA
